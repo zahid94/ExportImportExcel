@@ -32,10 +32,7 @@ namespace ExportImportExcel.Controllers
             };
             ExcelMapper mapper = new ExcelMapper();
             var CreateFilePath = @"D:\All Problems\newFile.xlsx";
-            if (CreateFilePath !=null)
-            {
-
-            }
+           
             //for this mapper install nuget mapper
             mapper.Save(CreateFilePath, student, "SheetName", true);
             TempData["sm"] = "Successfully excel create.";

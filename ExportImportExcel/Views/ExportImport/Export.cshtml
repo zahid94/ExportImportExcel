@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Export";
+}
+
+<h2>Export</h2>
+@Html.ActionLink("Create", "ExportExcel", "ExportImport")
+
+@if (TempData["sm"] !=null)
+{
+<h2>@TempData["sm"]</h2>
+}

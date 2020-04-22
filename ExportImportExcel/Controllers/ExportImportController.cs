@@ -35,7 +35,8 @@ namespace ExportImportExcel.Controllers
             if (CreateFilePath !=null)
             {
 
-            }            
+            }
+            //for this mapper install nuget mapper
             mapper.Save(CreateFilePath, student, "SheetName", true);
             TempData["sm"] = "Successfully excel create.";
             return RedirectToAction("Export");
